@@ -3,7 +3,6 @@ package elements;
 import com.codeborne.selenide.ElementsCollection;
 import io.qameta.allure.Step;
 import lombok.Getter;
-
 import java.util.Arrays;
 
 public class CheckBox {
@@ -37,8 +36,6 @@ public class CheckBox {
 
         return this;
     }
-
-
 }
 
 
