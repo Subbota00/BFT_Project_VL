@@ -3,11 +3,8 @@ package elements;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import lombok.Getter;
-
 import java.io.File;
-
 import static com.codeborne.selenide.Condition.*;
-import static com.codeborne.selenide.Selenide.$;
 
 public class ImportFile {
     public ImportFile(String name, SelenideElement selector) {
@@ -25,8 +22,5 @@ public class ImportFile {
         }
         selector.shouldBe(visible).shouldBe(enabled);
         selector.uploadFile(new File(filePath));
-
-        // Проверяем, что файл загружен (пример для demoqa.com)
-//        $(".form-control-file").shouldHave(text("your_file_name"));
     }
 }

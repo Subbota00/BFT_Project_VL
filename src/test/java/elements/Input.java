@@ -5,7 +5,6 @@ import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.ex.ElementNotFound;
 import io.qameta.allure.Step;
 import lombok.Getter;
-
 import java.time.Duration;
 import java.util.NoSuchElementException;
 
