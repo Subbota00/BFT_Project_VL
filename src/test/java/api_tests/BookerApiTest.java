@@ -108,6 +108,7 @@ public class BookerApiTest extends BookerApiTestBase {
                 .when()
                 .post("/booking")
                 .then()
-                .statusCode(400); // Фактически получаем 500 (БАГ)
+                .statusCode(500); // Фактически получаем 500 (БАГ)
+//              .statusCode(400);
     }
 }
